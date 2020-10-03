@@ -1,0 +1,25 @@
+.chat-list-container
+	color: #eee
+	padding: 15px
+	border-bottom: 1px solid #6b4f6d
+	.chat-header
+		cursor: pointer
+		margin: 5px 0
+		.fa-caret-down
+			transition: 0.3s
+		.chat-name
+			margin-left: 10px
+		&.collapsed
+			.fa-caret-down
+				transform: rotate(180deg)
+	.chat-list
+		margin-left: 8px
+		.chat-item
+			margin-bottom: 3px
+			.icon
+				font-size: 12px
+			.name
+				font-size: 15px
+				margin-left: 10px
+		&.collapsed
+			display: none

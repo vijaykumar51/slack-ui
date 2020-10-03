@@ -1,0 +1,32 @@
+<div class="chat-list-container">
+  <div class="chat-header" [ngClass]="listExpanded ? 'expanded' : 'collapsed'" (click)="listExpanded = !listExpanded">
+    <span class="fa fa-caret-down" aria-hidden="true"></span>
+    <span class="chat-name">{{ chatListName }}</span>
+  </div>
+  <div class="chat-list" [ngClass]="listExpanded ? 'expanded' : 'collapsed'">
+    <div class="chat-item">
+      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
+      <span class="name">Employees</span>
+    </div>
+    <div class="chat-item">
+      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
+      <span class="name">Projects</span>
+    </div>
+    <div class="chat-item">
+      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
+      <span class="name">Employees</span>
+    </div>
+    <div class="chat-item">
+      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
+      <span class="name">Projects</span>
+    </div>
+    <div class="chat-item">
+      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
+      <span class="name">Employees</span>
+    </div>
+    <div class="chat-item">
+      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
+      <span class="name">Projects</span>
+    </div>
+  </div>
+</div>
