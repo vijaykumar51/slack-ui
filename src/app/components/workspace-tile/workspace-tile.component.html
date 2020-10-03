@@ -1,4 +1,4 @@
-<div class="workspace-tile" (click)="openWorkspace()">
+<div class="workspace-tile" [routerLink]="['workspace', tileInfo.workspaceId]" [routerLinkActive]="'active-tile'">
   <div class="workspace-image-container">
     <img class="workspace-image" [src]="tileInfo.workspaceImageSrc" />
   </div>
