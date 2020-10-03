@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { WorkspaceTile } from "src/app/interfaces/workspace-tile";
 
 @Component({
@@ -8,7 +9,11 @@ import { WorkspaceTile } from "src/app/interfaces/workspace-tile";
 })
 export class WorkspaceTileComponent implements OnInit {
   @Input() tileInfo: WorkspaceTile;
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  public openWorkspace() {
+    this.router.navigate(["workspace", this.tileInfo.workspaceId]);
+  }
 }
