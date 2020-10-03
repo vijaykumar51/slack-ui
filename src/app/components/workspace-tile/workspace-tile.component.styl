@@ -1,0 +1,35 @@
+.workspace-tile
+	cursor: pointer
+	margin-bottom: 10px
+	position: relative
+	.workspace-image-container
+		.workspace-image
+			border: 2px solid #fff
+			width: 50px
+			height: 50px
+			border-radius: 5px
+	.workspace-name-container
+		display: none
+	&:hover
+		.workspace-name-container
+			background-color: #222
+			border-radius: 5px
+			color: #eee
+			display: inline-block
+			padding: 5px 8px
+			position: absolute
+			left: 50px
+			top: 15px
+			white-space: nowrap
+			&:before
+				border: solid transparent
+				border-right-color: #222
+				border-width: 5px
+				content: ""
+				height: 0
+				width: 0
+				position: absolute
+				right: 100%
+				top: 33%
+			
+

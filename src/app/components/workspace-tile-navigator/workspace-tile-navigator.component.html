@@ -1,0 +1,8 @@
+<div class="workspace-tile-navigator">
+  <div *ngFor="let tileInfo of workspaceTiles">
+    <app-workspace-tile [tileInfo]="tileInfo"></app-workspace-tile>
+  </div>
+  <div class="new-workspace-container">
+    <span class="fa fa-plus" aria-hidden="true"></span>
+  </div>
+</div>
