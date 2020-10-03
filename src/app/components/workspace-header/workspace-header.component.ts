@@ -4,11 +4,11 @@ import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
 
 @Component({
-  selector: "app-workspace-home",
-  templateUrl: "./workspace-home.component.html",
-  styleUrls: ["./workspace-home.component.styl"]
+  selector: "app-workspace-header",
+  templateUrl: "./workspace-header.component.html",
+  styleUrls: ["./workspace-header.component.styl"]
 })
-export class WorkspaceHomeComponent implements OnInit {
+export class WorkspaceHeaderComponent implements OnInit {
   public workspaceId: Observable<string>;
   constructor(private activatedRoute: ActivatedRoute) {}
 
