@@ -7,9 +7,10 @@ import { WorkspaceTileNavigatorComponent } from "./components/workspace-tile-nav
 import { WorkspaceTileComponent } from "./components/workspace-tile/workspace-tile.component";
 import { WorkspaceMenuComponent } from './components/workspace-menu/workspace-menu.component';
 import { WorkspaceHeaderComponent } from './components/workspace-header/workspace-header.component';
+import { WorkspaceFiltersComponent } from './components/workspace-filters/workspace-filters.component';
 
 @NgModule({
-  declarations: [AppComponent, WorkspaceTileComponent, WorkspaceTileNavigatorComponent, WorkspaceHomeComponent, WorkspaceMenuComponent, WorkspaceHeaderComponent],
+  declarations: [AppComponent, WorkspaceTileComponent, WorkspaceTileNavigatorComponent, WorkspaceHomeComponent, WorkspaceMenuComponent, WorkspaceHeaderComponent, WorkspaceFiltersComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
