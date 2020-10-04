@@ -11,9 +11,11 @@ import { WorkspaceFiltersComponent } from './components/workspace-filters/worksp
 import { ChatListComponent } from './components/chat-list/chat-list.component';
 import { ChatHomeComponent } from './components/chat-home/chat-home.component';
 import { ChatInputComponent } from './components/chat-input/chat-input.component';
+import { MessageGroupComponent } from './components/message-group/message-group.component';
+import { MessageComponent } from './components/message/message.component';
 
 @NgModule({
-  declarations: [AppComponent, WorkspaceTileComponent, WorkspaceTileNavigatorComponent, WorkspaceHomeComponent, WorkspaceMenuComponent, WorkspaceHeaderComponent, WorkspaceFiltersComponent, ChatListComponent, ChatHomeComponent, ChatInputComponent],
+  declarations: [AppComponent, WorkspaceTileComponent, WorkspaceTileNavigatorComponent, WorkspaceHomeComponent, WorkspaceMenuComponent, WorkspaceHeaderComponent, WorkspaceFiltersComponent, ChatListComponent, ChatHomeComponent, ChatInputComponent, MessageGroupComponent, MessageComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
