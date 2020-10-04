@@ -9,9 +9,10 @@ import { WorkspaceMenuComponent } from './components/workspace-menu/workspace-me
 import { WorkspaceHeaderComponent } from './components/workspace-header/workspace-header.component';
 import { WorkspaceFiltersComponent } from './components/workspace-filters/workspace-filters.component';
 import { ChatListComponent } from './components/chat-list/chat-list.component';
+import { ChatHomeComponent } from './components/chat-home/chat-home.component';
 
 @NgModule({
-  declarations: [AppComponent, WorkspaceTileComponent, WorkspaceTileNavigatorComponent, WorkspaceHomeComponent, WorkspaceMenuComponent, WorkspaceHeaderComponent, WorkspaceFiltersComponent, ChatListComponent],
+  declarations: [AppComponent, WorkspaceTileComponent, WorkspaceTileNavigatorComponent, WorkspaceHomeComponent, WorkspaceMenuComponent, WorkspaceHeaderComponent, WorkspaceFiltersComponent, ChatListComponent, ChatHomeComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]

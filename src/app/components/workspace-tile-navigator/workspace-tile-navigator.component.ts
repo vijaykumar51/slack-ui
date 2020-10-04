@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { WorkspaceService } from "src/app/services/workspace.service";
 import { WorkspaceTile } from "../../interfaces/workspace-tile";
 
 @Component({
@@ -8,23 +9,9 @@ import { WorkspaceTile } from "../../interfaces/workspace-tile";
 })
 export class WorkspaceTileNavigatorComponent implements OnInit {
   public workspaceTiles: Array<WorkspaceTile> = [];
-  constructor() {}
+  constructor(private workspaceService: WorkspaceService) {}
 
   ngOnInit(): void {
-    this.workspaceTiles.push({
-      workspaceId: "wsp1",
-      workspaceDisplayName: "BlackRock",
-      workspaceImageSrc: "https://api.adorable.io/avatars/65/slackui-wsp1.png"
-    });
-    this.workspaceTiles.push({
-      workspaceId: "wsp2",
-      workspaceDisplayName: "Bamboo",
-      workspaceImageSrc: "https://api.adorable.io/avatars/65/slackui-wsp2.png"
-    });
-    this.workspaceTiles.push({
-      workspaceId: "wsp3",
-      workspaceDisplayName: "System Design",
-      workspaceImageSrc: "https://api.adorable.io/avatars/65/slackui-wsp3.png"
-    });
+    this.workspaceTiles = this.workspaceService.getWorkspaces();
   }
 }

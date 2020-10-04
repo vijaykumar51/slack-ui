@@ -4,29 +4,9 @@
     <span class="chat-name">{{ chatListName }}</span>
   </div>
   <div class="chat-list" [ngClass]="listExpanded ? 'expanded' : 'collapsed'">
-    <div class="chat-item">
-      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
-      <span class="name">Employees</span>
-    </div>
-    <div class="chat-item">
-      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
-      <span class="name">Projects</span>
-    </div>
-    <div class="chat-item">
-      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
-      <span class="name">Employees</span>
-    </div>
-    <div class="chat-item">
-      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
-      <span class="name">Projects</span>
-    </div>
-    <div class="chat-item">
-      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
-      <span class="name">Employees</span>
-    </div>
-    <div class="chat-item">
-      <span class="icon fa fa-hashtag" aria-hidden="true"></span>
-      <span class="name">Projects</span>
+    <div class="chat-item" *ngFor="let item of chatListItems" (click)="openChat(item.itemId)">
+      <span class="icon" aria-hidden="true" [ngClass]="item.type"></span>
+      <span class="name">{{ item.displayName }}</span>
     </div>
   </div>
 </div>

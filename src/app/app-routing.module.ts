@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { ChatHomeComponent } from "./components/chat-home/chat-home.component";
 import { WorkspaceHomeComponent } from "./components/workspace-home/workspace-home.component";
 
 const routes: Routes = [
@@ -8,11 +9,31 @@ const routes: Routes = [
     children: [
       {
         path: ":workspaceId",
-        component: WorkspaceHomeComponent
+        component: WorkspaceHomeComponent,
+        children: [
+          {
+            path: "announcement",
+            children: [
+              {
+                path: ":chatId",
+                component: ChatHomeComponent
+              }
+            ]
+          },
+          {
+            path: "directMessage",
+            children: [
+              {
+                path: ":chatId",
+                component: ChatHomeComponent
+              }
+            ]
+          }
+        ]
       }
     ]
-  },
-  { path: "**", redirectTo: "" }
+  }
+  //   { path: "**", redirectTo: "" }
 ];
 
 @NgModule({

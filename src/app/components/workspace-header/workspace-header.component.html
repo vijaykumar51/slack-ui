@@ -1,6 +1,8 @@
 <div class="workspace-header">
   <div class="workspace-info-container">
-    <div class="workspace-name">{{ workspaceId | async }}</div>
+    <ng-container *ngIf="(workspaceInfo | async) || {}; let workspace">
+      <div class="workspace-name">{{ workspace.workspaceDisplayName }}</div>
+    </ng-container>
     <div class="user-info-container">
       <span class="user-status online"></span>
       <span class="user-name">Vijay Kumar</span>

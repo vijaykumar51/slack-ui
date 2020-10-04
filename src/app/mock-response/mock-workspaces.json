@@ -1,0 +1,17 @@
+[
+  {
+    "workspaceId": "blackrock",
+    "workspaceDisplayName": "BlackRock",
+    "workspaceImageSrc": "https://api.adorable.io/avatars/65/slackui-wsp1.png"
+  },
+  {
+    "workspaceId": "bamboo",
+    "workspaceDisplayName": "Bamboo",
+    "workspaceImageSrc": "https://api.adorable.io/avatars/65/slackui-wsp2.png"
+  },
+  {
+    "workspaceId": "systemDesign",
+    "workspaceDisplayName": "System Design",
+    "workspaceImageSrc": "https://api.adorable.io/avatars/65/slackui-wsp3.png"
+  }
+]
