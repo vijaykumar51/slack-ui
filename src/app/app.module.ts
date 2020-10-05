@@ -13,9 +13,10 @@ import { ChatHomeComponent } from './components/chat-home/chat-home.component';
 import { ChatInputComponent } from './components/chat-input/chat-input.component';
 import { MessageGroupComponent } from './components/message-group/message-group.component';
 import { MessageComponent } from './components/message/message.component';
+import { ChatHeaderComponent } from './components/chat-header/chat-header.component';
 
 @NgModule({
-  declarations: [AppComponent, WorkspaceTileComponent, WorkspaceTileNavigatorComponent, WorkspaceHomeComponent, WorkspaceMenuComponent, WorkspaceHeaderComponent, WorkspaceFiltersComponent, ChatListComponent, ChatHomeComponent, ChatInputComponent, MessageGroupComponent, MessageComponent],
+  declarations: [AppComponent, WorkspaceTileComponent, WorkspaceTileNavigatorComponent, WorkspaceHomeComponent, WorkspaceMenuComponent, WorkspaceHeaderComponent, WorkspaceFiltersComponent, ChatListComponent, ChatHomeComponent, ChatInputComponent, MessageGroupComponent, MessageComponent, ChatHeaderComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
