@@ -4,8 +4,15 @@
 	flex-direction: column
 	height: 100vh
 	min-width: 300px
-	.message-container
-		display: flex
-		flex-direction: column
+	overflow: auto
+	.chat-header-container
+		flex: 0 0 auto
+	.message-group-container
+		margin: 5px
+		// display: flex
+		// flex-direction: column
+		justify-content: flex-end
 		flex: 1 1 100%
-		justify-content: space-between
+		overflow-y: auto
+	.chat-input-container
+		flex: 0 0 auto

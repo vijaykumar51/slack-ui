@@ -1,9 +1,10 @@
 <div class="chat-home">
-  <div class="message-container">
+  <div class="chat-header-container">
     <app-chat-header></app-chat-header>
-    <div class="message-group-container">
-      <app-message-group></app-message-group>
-    </div>
+  </div>
+  <div class="message-group-container">
+    <app-message-group [order]="'1'"></app-message-group>
+    <app-message-group [order]="'2'"></app-message-group>
   </div>
   <div class="chat-input-container">
     <app-chat-input></app-chat-input>
