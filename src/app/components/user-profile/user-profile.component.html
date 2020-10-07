@@ -1,0 +1,11 @@
+<div class="user-profile" (mouseover)="showProfileTile = true" (mouseout)="showProfileTile = false">
+  <div class="user-image">
+    <img src="https://api.adorable.io/avatars/120/user2.png" />
+  </div>
+  <div class="profile-tile" *ngIf="showProfileTile">
+    <div class="user-full-image">
+      <img src="https://api.adorable.io/avatars/120/user2.png" />
+    </div>
+    <div class="user-name">Vijay Kumar</div>
+  </div>
+</div>

@@ -9,7 +9,5 @@ export class MessageComponent implements OnInit {
   @Input() order: number;
   constructor() {}
 
-  ngOnInit(): void {
-    console.log("order =>", this.order);
-  }
+  ngOnInit(): void {}
 }
